@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/431d8cd4a5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Developer</p>
+            <h1>Hi, I'm <span>Arya </span> Sahu <br> From India</h1>
+        </div>
+    </div>
+</div>
+<!-- ------------------About-------------------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="User.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="subtitle">About Me</h1>
+                <p>
+                    I am Arya Sahu, a passionate and dedicated professional with a Master of Technology in Biomedical Engineering from the Indian Institute of Technology, Ropar, and a Bachelor of Technology in Biotechnology. My expertise lies in data analytics, deep learning, and front-end development, with proficiency in Python, SQL, JavaScript, and various machine learning frameworks. <br>
+                    <br>I have gained valuable experience through internships at Exposys Data Labs and Talentio Solutions, and have completed several relevant projects. As a placement coordinator and batch representative at IIT Ropar, I have demonstrated strong leadership and organizational skills. I am committed to driving innovation in biomedical engineering and data science.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Preferred Roles')">Preferred Roles</p>
+                    <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Preferred Roles">
+                    <ul>
+                        <li><span>Front-End Development</span></li>
+                        <li><span>Data Science and Analytics</span></li>
+                    </ul>
+                </div>
+                <div class="tab-contents " id="experience">
+                    <ul>
+                        <li><span>Oct 2023-Nov 2023</span><br>Web Developer Intern at Exposys Data Labs</li>
+                        <a href="InternshipCertificate1.pdf" class="btn">Certificate</a>
+                        <li><span>June 2019-July2019</span><br>Internship at Talentio Solutions India Pvt Ltd</li>
+                        <a href="InternshipCertificate2.pdf" class="btn">Certificate</a>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022-2024</span><br>M.tech from Indian Institute of Technology Ropar.<br>CGPA : 8.17</li>
+                        <li><span>2018-2022</span><br>B.Tech from Dr. APJ Abdul Kalam Technical University<br>CGPA : 8.56</li>
+                        <li><span>2016-2017</span><br>Senior Secondary from B.S.S. Public School.<br>Percentage : 88.6%</li>
+                        <li><span>2014-2015</span><br>Secondary from B.S.S. Public School.<br>CGPA : 10</li>
+                    </ul>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -------------------------------Skills------------------------------------------ -->
+<div id="skills">
+    <div class="container">
+        <h1 class="subtitle">Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Proficient in Python programming for data analysis and machine learning.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+                <p>Skilled in creating structured content for web development.</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2>SQL</h2>
+                <p>Experienced in database management and querying using SQL.</p>
+            </div>
+        </div>
+        <a href="index2.html" class="btn">See More</a>
+    </div>
+</div>
+<!-- ------------------------------Project--------------- ------------>
+<div id="project">
+    <div class="container">
+        <h1 class="subtitle">Projects</h1>
+        <div class="project-list">
+            <div class="project">
+                <img src="yogapose.png">
+                <div class="layer">
+                    <h3>Real-time Yoga Pose Detection and Classification</h3>
+                    <p>Developed a robust yoga pose classifier utilizing custom data and Mediapipe for keypoint extraction. Integrated CNN, LSTM with attention mechanism for enhanced precision. Deployed using Tkinter for intuitive user interface. Leveraged TensorFlow, Keras, scikit-learn, among other frameworks for development and optimization.</p>
+                    <a href="https://github.com/Arya0212/Real-time-Yoga-Pose-Detection-and-Classification-using-Mediapipe-and-Deeplearning"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="mailDispatcher (2).png">
+                <div class="layer">
+                    <h3>Web-Based Mass Mail Dispatcher</h3>
+                    <p>The Mass Mail Dispatcher is an innovative web application designed to simplify and enhance the process of sending emails to multiple recipients simultaneously. Leveraging modern web technologies and the EmailJS API, the project aims to provide users with an efficient, user-friendly, and customizable solution for mass email dispatch.</p>
+                    <a href="https://github.com/Arya0212/Mass-Mail-Dispatcher"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="project">
+                <img src="salesAnalysis.jpg">
+                <div class="layer">
+                    <h3>Sales Data Analysis</h3>
+                    <p>This is a simple BMI (Body Mass Index) calculator website built using HTML, CSS, and JavaScript. It allows users to input their age, gender, height, and weight, and calculates their BMI accordingly.</p>
+                    <a href="https://github.com/Arya0212/SalesDataAnalysis"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="index3.html" class="btn">See More</a>
+    </div>
+</div>
+<!-- ----------------------Contact------------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> asahuofficial0212@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> +91-7565976794</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/arya-sahu-74213726b/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Arya0212"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/_arya_0215/?igsh=a2lucXpucmZ4bmgx"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="AryaSahu_Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="E-mail" placeholder="Your E-mail" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright  <i class="fa-regular fa-copyright"></i> Arya Sahu. All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu")
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwjm9J_c5KMLMz5iLfaEDCrcC3ReE5BwA0Gr3xZDLCRGWnEWMldpywJG5IqgBjG8DPw/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Thank you. Your message has been received."
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
