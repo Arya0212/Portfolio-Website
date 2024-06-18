@@ -1,0 +1,128 @@
+/* ------------------------------projects---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serrif';
+    box-sizing: border-box;
+}
+body {
+    background: #080808;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%;
+    font-size: 25px;
+}
+#project{
+    padding: 50px 0;
+}
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.project{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.project img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.layer h3{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.layer p{
+    font-size: 15px;
+}
+.layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.project:hover img{
+    transform: scale(1.1);
+}
+.project:hover .layer{
+    height: 100%;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i{
+    color: #ff004f;
+}
+@media only screen and (max-width: 900px) {
+    .project-list {
+        grid-template-columns: repeat(2, minmax(250px, 1fr)); 
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .project-list {
+        grid-template-columns: 1fr; 
+    }
+    .layer h3{
+        font-weight: 500;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    .layer p{
+        font-size: 13px;
+    }
+    .layer a{
+        margin-top: 10px;
+        color: #ff004f;
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 64px;
+        background: #fff;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+    }
+    .subtitle {
+        font-size: 40px;
+    }
+
+    .copyright {
+        font-size: 14px;
+    }
+}
